@@ -43,11 +43,11 @@ pinCode = 413307
 console.log("PinCode:", pinCode);
 
 var gender;
-gender = false
+gender = "Female";
 console.log("Gender:",gender);
 
 var isMarried;
-isMarried ="No"
+isMarried = false
 console.log("Is Married:" ,isMarried);
 
 
