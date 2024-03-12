@@ -23,3 +23,32 @@ console.log ("Index  of char M is:", indexOfM);
 
 console.log("========concat ==========");
 
+console.log("========Replace==========");
+var greet = "Good Morning";
+ const afterReplace = greet.replace("Morning","Afternoon");
+ console.log(`After replace string is: ${afterReplace}` );
+
+ console.log(`========== toUpperCase ==========`);
+ var greet = "Good Morning";
+ var  greetInUpperCase =  greet.toUpperCase();
+ console.log(`${greet} in upper case is: ${greetInUpperCase}`);
+
+ console.log(`========== trim ==========`);
+ var greet = "   Good Morning    ";
+ console.log(`${greet} its length is: ${greet.length}`);
+ var length = greet.length;
+ console.log(`${greet} its length is: ${length}`);
+ 
+
+
+ console.log(`=========== includes ==========`);
+ var greet = "Good Morning";
+ var greetIncludes = greet.includes();
+ console.log(`${greet} includes is: ${greetIncludes}`);
+
+ console.log(`========== Slice Method ==========`);
+ var greet = "Good Morning";
+ var greetSlice = greet.slice();
+ console.log(greet.slice(0,5));
+
+
