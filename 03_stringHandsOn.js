@@ -28,9 +28,7 @@ console.log(`First Character After trim  is:${ firstChar}` );
 console.log(`Last Character After Trim is:${lastChar}`);
 
 console.log("========== STEP 6 ==========");
-//var words = sentenceTrim.split();
-//console.log(words);
-//console.log(`count of total words after trim is:${words.length}`);
+
  var resultValue = sentenceTrim.split(" ")
  console.log(resultValue);
  console.log(`Total count of  words after strim are:${resultValue.length}`);
