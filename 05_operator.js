@@ -59,3 +59,32 @@ console.log(`Result of "Prefix" is:${result}`);
 var n2 = 10;
 var result =  n2 --;  //n2 =  n2-1
 console.log(`Result of "Postfix" is:${result}`);
+
+
+var a = 5;
+var b = a++
+console.log(`value of a is:${a} `);
+console.log(`value of b is:${b} `);
+
+var n1 = 5;
+var res = n1++ + ++n1 + n1++;
+console.log(`value of n is:${res} `);
+
+var a = 2;
+var b = ++a + ++a + a++ - --a;
+console.log(`value of a is:${a} `);
+console.log(`value of b is:${b} `);
+
+var a = 4;
+var b= a-- + ++a + ++a + a++;
+console.log(`value of a is:${a} `);
+console.log(`value of b is:${b} `);
+
+console.log("==========Ternary Operator=========");
+var a = 7;
+var res = a%2==0 ? "EVEN":"ODD";
+console.log(`value of a is:${res} `);
+
+var a = 8;
+var res = a%2==0 ? "EVEN":"ODD";
+console.log(`value of a is:${res} `);
