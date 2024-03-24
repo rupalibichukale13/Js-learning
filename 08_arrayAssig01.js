@@ -5,6 +5,7 @@ fruits_seasonal = ["Banana","Orange","Apple","Mango","Water Melon"];
 console.log(`=========== Original Array ============`);
 console.log(fruits_seasonal);
 
+
 console.log(`============== STEP 1 =================`);
 console.log(`${fruits_seasonal.length-1}`);
 
