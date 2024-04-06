@@ -11,7 +11,8 @@ let person = `{
         "street":"32,Laham St.",
         "city": "Innsbruck",
      "country": "Austria"},
-    "referred-by": "E0012" }`
+    "referred-by": "E0012" 
+}`
 console.log(`JSON Person is:${person}`);
 console.log(`============ Converting  JSON to Object ===============`);
 const personObject = JSON.parse(person);
