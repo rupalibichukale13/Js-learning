@@ -1,7 +1,7 @@
 
 console.log(`=============== Program to count Prime Numbers from given array ============`);
 const array = [3,9,7,6,19,29,53]
-function primeNumbers(num) {
+function specialCount(num) {
   for (let index = 2; index < num; index++) {
     if (num%index==0) {
         return false;
@@ -15,7 +15,7 @@ function countPrimeNumber(array) {
     let count = 0;
     let primeNumberArray=[];
     array.forEach(element => {
-       if (primeNumbers(element)) {
+       if (specialCount(element)) {
            count++
            primeNumberArray.push(element);
        } 
