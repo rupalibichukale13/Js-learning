@@ -26,7 +26,8 @@ const arrayPerson = [jenny, bill, elon, stew];
 const arrayNames = arrayPerson.map( (employee)=>{
     return employee.name;
 } );
-console.log(arrayNames);arraySquare = array.map( (currentValue)=>{
+console.log(arrayNames);
+arraySquare = array.map( (currentValue)=>{
          return currentValue * currentValue;
 });console.log(arraySquare);
 
