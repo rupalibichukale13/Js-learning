@@ -34,7 +34,7 @@ arrayEmployees.forEach(element => {
 console.log(`--------------- arrayEmployees in ascending order of employee department ------------- `);
 
 arrayEmployees.sort((p1, p2)=>{
-    return p1.emp_dept > p2.emp_dept ? 1 : -1;
+    return p1.emp_dept >= p2.emp_dept ? 1 : -1;
 });
 
 arrayEmployees.forEach(element => {
