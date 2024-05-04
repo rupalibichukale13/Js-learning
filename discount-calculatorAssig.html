@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discount Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        color: cadetblue;
+        font-family: "Varela Round", sans-serif;
+      }
+
+      h2 {
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .calculator {
+        border-radius: 8px;
+        padding: 20px 20px;
+        width: 400px;
+        box-sizing: content-box;
+        box-shadow: -1px 2px 28px 12px rgba(0, 0, 0, 0.42);
+        -webkit-box-shadow: -1px 2px 28px 12px rgba(0, 0, 0, 0.42);
+        -moz-box-shadow: -1px 2px 28px 12px rgba(0, 0, 0, 0.42);
+        margin: auto;
+        margin-top: 30px;
+      }
+
+      input[type="number"] {
+        width: 390px;
+        border: 1px solid rgb(209, 214, 214);
+        border-radius: 4px;
+        padding: 5px;
+        margin-bottom: 15px;
+      }
+
+      button[type="submit"] {
+        color: white;
+        background-color: #4caf50;
+        border: 1px solid #4caf50;
+        border-radius: 10px;
+        width: 400px;
+        padding: 4px;
+        font-size: large;
+        margin-bottom: 20px;
+      }
+
+      button[type="submit"]:hover {
+        background-color: burlywood;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="calculator">
+      <h2>Discount Calculator</h2>
+      <p>Enter the Bill amount and discount in percentage</p>
+
+      <label for="amount">Bill Amount</label>
+      <br />
+      <input type="number" name="" id="amount" />
+      <br />
+      <label for="discountPercentage">Discount Percentage</label>
+      <br />
+      <input type="number" name="" id="discountPercentage" />
+      <br />
+      <button type="submit" class="calculate">Calculate</button>
+      <br />
+      <label for="discountAmount">Total Discount Amount</label>
+      <br />
+      <input type="number" id="discountAmount" disabled />
+    </section>
+
+    <script>
+      const calculate = document.querySelector(".calculate");
+      calculate.addEventListener("click", (e) => {
+        e.preventDefault();
+        const billAmount = document.getElementById("amount").value;
+        const discountPercentage = document.getElementById("discountPercentage").value;
+        const discountAmount = document.getElementById("discountAmount");
+        discountAmount.value = (billAmount * discountPercentage) / 100;
+      });
+    </script>
+  </body>
+</html>
